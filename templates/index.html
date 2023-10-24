@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<h1>we can change it by using innerhtml</h1> 
+<p id="demo1">Hello</p>
+<button type="button" onclick='document.getElementById("demo1").innerHTML="Hi"' >Clickme</button>
+<p id="demo2">This is JS(changing fontsize)</p>
+<button type="button" onclick="document.getElementById('demo2').style.fontSize='30px'">Click me</button>
+<p id="demo3">we can change display</p>
+<button type="button" onclick="document.getElementById('demo3').style.display='none'">Clickme</button>
+<p id="demo4" style="display: none;">we can change display</p>
+<button type="button" onclick="document.getElementById('demo4').style.display='block'">Clickme</button>
+<h2>Demo JavaScript in Body</h2>
+
+<p id="demo">A Paragraph</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+
+<script>
+alert(5 + 5);
+</script>
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+
+<script>
+window.alert(5 + 10);
+</script>
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+
+<script>
+document.write(5 + 15);
+</script>
+<h1>My First Web Page</h1>
+<p>My first paragraph.</p>
+
+<script>
+console.log(5 + 20);
+</script>
+<p>Click the button to print the current page.</p>
+
+<button onclick="window.print()">Print this page</button>
+
+
+
+<h2>JavaScript Functions</h2>
+<p>JavaScript has an built-in function constructor.</p>
+<p id="demo"></p>
+
+<script>
+let myFunction = new Function("a", "b", "return a * b");
+document.getElementById("demo").innerHTML = myFunction(4, 3);
+</script>
+
+<h1>JavaScript Dates</h1>
+<h2>Using new Date()</h2>
+<p>new Date() without arguments, creates a date object with the current date and time:</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+
+</body>
+</html>
+
